@@ -1,0 +1,127 @@
+.download-app{
+    
+    width: 100%;
+    padding: 20px 0;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+    .container__texto__image__video{
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .container__texto{
+            width: 100%;
+            padding: 7px;
+    
+        }
+        .container__texto >h2{
+            font-size:1.5em;
+            font-weight: bold;
+        }
+
+        .container__texto >p{
+            font-size:1em;
+        }
+
+        .container__image__video{
+            width:100%;
+        }
+
+            .images__app{
+                padding: 20px 0 0;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+                
+            }
+                /* SELECCIONAMOS A LA PRIMERA IMAGEN */
+                .images__app>img:nth-child(1){
+                    width:50%;
+                    max-width: 250px;
+                }
+
+                .images__app>img:nth-child(2){
+                    width:50%;
+                    max-width: 200px;
+                }
+            
+            .container__iframe{
+                
+                padding: 10px  0;
+                display:flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: center;
+                
+            }
+
+            .container__iframe>iframe{
+                width: 80%;
+                max-width: 400px;
+                height: 230px;
+            }
+
+
+      @media (min-width:768px){
+
+        .container__texto >h2{
+            font-size:2em;
+            font-weight: bold;
+        }
+
+        .container__texto >p{
+            font-size:1.3em;
+        }
+        
+        .container__iframe{
+            padding: 30px  0;
+            display:flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+      }      
+
+      @media (min-width:992px){
+        .images__app>img:nth-child(1){
+            max-width: 600px;
+            height: 300px;
+        }
+        .container__iframe{
+            padding: 40px  0;
+        }
+            .container__iframe>iframe{
+                width: 80%;
+                max-width: 400px;
+                height: 280px;
+            }
+      }
+
+      @media (min-width:1200px){
+
+        .container__texto >h2{
+            font-size:2.2em;
+        }
+
+        .container__iframe{
+            padding: 50px  0;
+        }
+
+            .container__iframe>iframe{
+                width: 80%;
+                max-width: 450px;
+                height: 300px;
+            }
+        .images__app>img:nth-child(1){ 
+            height: 400px;
+        } 
+      }
+
+      
